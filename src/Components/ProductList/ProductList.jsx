@@ -3,9 +3,21 @@ import "../../Styles/productlist.css";
 
 export default function ProductList(props){
     const arrProducts = [
-        ['Milk', '13.00','Ordinary farmer`s milk.'],
-        ['Wine', '68.00', 'Farmer`s wine.'],
-        ['Sugar', '14.00', '1kg of ordinary sugar.']
+        {
+            "product": 'Milk',
+            "price": 13.00, 
+            "description": 'Ordinary farmer`s milk.'
+        }, 
+        {
+            "product": 'Wine',
+            "price": 68.00, 
+            "description": 'Farmer`s wine.'
+        }, 
+        {
+            "product": 'Sugar',
+            "price": 14.00, 
+            "description": '1kg of ordinary sugar.'
+        }
     ];
 
     return(
