@@ -22,9 +22,9 @@ export default function ProductList(props){
 
     return(
         <div>
-            {arrProducts.map(prod => {
+            {arrProducts.map(p => {
                 return (
-                    <Product product={prod} className="prodList "></Product>
+                    <Product prod={p} className="prodList "></Product>
                 )
             })}
             {props.children}

@@ -1,17 +1,14 @@
-import "../../Styles/product.css"
+import "../../Styles/product.css";
 
 export default function Product(props){
-    const {'product': prodName, 
-        'price': prodPrice, 
-        'description': prodDesc
-    } = props.product;
+    const {product, price, description} = props.prod; // Credit to Morgan. 
 
     let classes = "clsProd " + props.className;
 
     return(
         <div className = {classes}>
-            <p> Product {prodName}, price {prodPrice}</p>
-            <p> Description: {prodDesc}</p>
+            <p> Product {product}, price {price}</p>
+            <p> Description: {description}</p>
         </div>
     );
 }
