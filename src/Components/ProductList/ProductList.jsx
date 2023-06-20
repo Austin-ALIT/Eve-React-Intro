@@ -24,7 +24,7 @@ export default function ProductList(props){
         <div>
             {arrProducts.map(p => {
                 return (
-                    <Product prod={p} className="prodList "></Product>
+                    <Product prod={p}></Product>
                 )
             })}
             {props.children}
